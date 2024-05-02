@@ -1,0 +1,686 @@
+body {
+  background-color: #F1EDE2;
+  position: relative;
+  overflow: hidden;
+  touch-action: none;
+
+
+}
+
+
+/* Style for the button bar container */
+.button-bar-container {
+  display: flex;
+  align-items: center;
+  /* Distributes buttons evenly */
+  justify-content: center;
+  /* Keeps the button bar at the bottom */
+  position: fixed;
+  height: 42px;
+
+  bottom: 0;
+  width: 100%;
+  min-height: 36px;
+  padding: 16px 4px;
+  background-color: #F1EDE2;
+
+}
+
+/* //bottom bar*/
+/* General button styles */
+.button-bar-container .btn {
+  /* flex: 1; */
+  height: 32px;
+  border: 2px solid #293592;
+  background-color: transparent;
+  padding: 18px;
+  margin: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  transition: background-color 0.2s;
+}
+
+
+/* Hover effect for buttons */
+.button-bar-container .btn:hover {
+  background-color: #e2f4f3;
+  /* Slight background color on hover */
+}
+
+/* //bottom bar image*/
+/* Icon styles */
+.button-bar-container img {
+  width: 20px;
+  height: 20px;
+}
+
+#post-button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  margin: 6px;
+  background-color: #293592;
+  color: white;
+
+}
+
+/* category button */
+.cat-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border: 1.5px solid #293592;
+  background-color: transparent;
+  padding: 4px;
+  margin: 6px;
+   cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.4s;
+  z-index: 100;
+}
+
+
+.category {
+  display: flex;
+  /* Align children (buttons) in a row */
+  justify-content: center;
+  /* Center the buttons horizontally */
+  align-items: center;
+  /* Center the buttons vertically */
+  /* ... any other styles ... */
+}
+
+/* image inside catetogy-button */
+.cat-btn img {
+  align-items: center;
+  padding: 2px 2px;
+  width: auto;
+  height: 32px;
+}
+
+.structure-items-list img {
+  align-items: center;
+  width: auto;
+  height: 30px;
+  z-index: 100;
+}
+
+
+/* structure item-list */
+.structure-items-list {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  /* Allows horizontal scrolling */
+  flex-wrap: nowrap;
+  /* Prevents the buttons from wrapping */
+  width: 100%;
+  padding: 4px 2px;
+  /* Padding inside the container for better spacing */
+  border: 1px;
+
+  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: scrollbar;
+  z-index: 100;
+  /* Hides scrollbar in Internet Explorer and Edge */
+}
+
+/*items choices */
+.furniture-items-list,
+.structure-items-list,
+.tree-items-list,
+.people-items-list,
+.outdoor-items-list {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+}
+
+
+.structure-btn {
+  height: 42px;
+  /* Responsive height based on viewport width */
+  width: 42px;
+  /* Responsive width based on viewport width */
+  margin: 4px 6px;
+  min-width: 42px;
+  /* Margin around each button */
+  background-color: transparent;
+  border: 1.5px solid #293592;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  /* Centers content horizontally inside the button */
+  align-items: center;
+  /* Centers content vertically inside the button */
+  padding: 2px;
+  z-index: 100;
+  /* Adjust padding based on size */
+}
+
+
+
+/* furniture item-list */
+.furniture-items-list {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 4px 2px;
+  border: 1px;
+  z-index: 10000;
+  z-index: 100;
+  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: scrollbar;
+  /* Hides scrollbar in Internet Explorer and Edge */
+}
+
+/*.furniture-items-list::-webkit-scrollbar {
+
+  /* Hides scrollbar in Chrome, Safari, and Opera 
+}*/
+
+.furniture-btn {
+
+  height: 42px;
+  /* Responsive height based on viewport width */
+  width: 42px;
+  /* Responsive width based on viewport width */
+  margin: 4px 6px;
+  min-width: 42px;
+  /* Margin around each button */
+  background-color: transparent;
+  border: 1.5px solid #293592;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  /* Centers content horizontally inside the button */
+  align-items: center;
+  /* Centers content vertically inside the button */
+  padding: 2px;
+  z-index: 100;
+  /* Adjust padding 
+  ased on size */
+}
+
+.furniture-items-list img {
+  align-items: center;
+  width: auto;
+  height: 30px;
+  z-index: 100;
+}
+
+
+/* tree item-list */
+.tree-items-list {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 4px 2px;
+  border: 1px;
+  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: scrollbar;
+  z-index: 100;
+}
+
+.tree-items-list::-webkit-scrollbar {
+  display: flex;
+  /* Hides scrollbar in Chrome, Safari, and Opera */
+}
+
+.tree-btn {
+  height: 42px;
+  width: 42px;
+  margin: 4px 6px;
+  min-width: 42px;
+  background-color: transparent;
+  border: 1.5px solid #293592;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  z-index: 100;
+
+}
+
+.tree-items-list img {
+  align-items: center;
+  width: auto;
+  height: 30px;
+  z-index: 100;
+}
+
+/* people item-list */
+.people-items-list {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 4px 2px;
+  border: 1px;
+  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: scrollbar;
+  z-index: 100;
+}
+
+/*.people-items-list::-webkit-scrollbar */
+
+.people-btn {
+  height: 42px;
+  width: 42px;
+  margin: 4px 6px;
+  min-width: 42px;
+  background-color: transparent;
+  border: 1.5px solid #293592;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  z-index: 100;
+}
+
+.people-items-list img {
+  align-items: center;
+  width: auto;
+  height: 30px;
+  z-index: 100;
+}
+
+/* people item-list */
+.people-items-list {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 4px 2px;
+  border: 1px;
+  z-index: 100;
+  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: scrollbar;
+}
+
+
+/* outdoor item-list */
+.outdoor-items-list {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 4px 2px;
+  border: 1px;
+  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: scrollbar;
+}
+
+.outdoor-items-list::-webkit-scrollbar {
+  display: flex;
+  /* Hides scrollbar in Chrome, Safari, and Opera */
+}
+
+.outdoor-btn {
+  height: 42px;
+  width: 42px;
+  margin: 4px 6px;
+  min-width: 42px;
+  background-color: transparent;
+  border: 1.5px solid #293592;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  z-index: 100;
+
+}
+
+.outdoor-items-list img {
+  align-items: center;
+  width: auto;
+  height: 30px;
+  z-index: 100;
+}
+
+
+.active-btn {
+  border-width: 3px;
+  /* Or any thickness you want for the active state */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+
+/* -------Generate item Image when click------------ */
+
+/* Container where images will be added */
+#target {
+  position: relative;
+  /* This allows absolute positioning relative to this container */
+}
+
+/* Images inside the target will be absolutely positioned */
+#target img {
+  position: absolute;
+  width: 30vw;
+  /* Set the width as needed */
+  /* Initial z-index can be set here, or directly in JavaScript as you've done */
+}
+
+/* start Image container */
+
+
+
+
+.handle-container {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  position: absolute;
+  cursor: nwse-resize;
+  z-index: 100;
+
+  display: block;
+  user-select: none;
+  margin: 0;
+  pointer-events: none;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  z-index: 1000000;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  display: block;
+  user-select: none;
+  margin: 0;
+  pointer-events: all;
+  right: -12px;
+  bottom: -12px;
+  border-radius: 100%;
+  cursor: grabbing;
+}
+
+.button-bar-container .btn {
+  height: 28px;
+  width : auto;
+
+}
+
+.button-bar-container .btn img {
+  width: 20px;
+  height: auto;
+}
+
+#posts {
+  height: 100px;
+  width: 100px;
+}
+/* desktop size */
+#overlay {
+  /* background-color: #F1EDE2;  */
+  background-color: #F1EDE2; 
+  position: fixed;  /* Keeps the overlay fixed over the entire screen */
+  top: 18vh;
+  left: 0;
+  width: 100%;
+  height: 68vh;
+  z-index: 100; /* Ensures it's on top but not necessarily the topmost layer */
+
+}
+
+/* Responsive adjustments for smaller screens จะให้แสดง ตามฟังชันต่อไปนี้
+ต่อเมื่อจอใหญ่ไม่เกิน ...*/
+@media (max-width: 480px) {
+
+  #image-overlay {
+    /* background-color: grey; */
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    display: none;  /* Controlled via JavaScript */
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+
+  }
+  /* structure item-list */
+  /* Ensures smooth scrolling on touch devices */
+  .furniture-items-list,
+  .structure-items-list,
+  .tree-items-list,
+  .people-items-list,
+  .outdoor-items-list {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;  
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 8px 4px;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: thin; 
+    -ms-overflow-style: scrollbar; 
+    z-index: 1000;
+
+  }
+    /* mobile size*/
+    #overlay {
+      /* background-color: #F1EDE2;  */
+      background-color: #F1EDE2; 
+      position: fixed;  /* Keeps the overlay fixed over the entire screen */
+      top: 20vh;
+      left: 0;
+      width: 100%;
+      height: 60vh;
+      z-index: 0; /* Ensures it's on top but not necessarily the topmost layer */
+
+    }
+
+      .image-container {
+        position: absolute;
+        top: 0; /* Adjust as necessary to not overlap with the image-overlay */
+        left: 0;
+        width: 100%; /* Ensures it covers the full overlay width */
+        height: auto; /* Adjust height as needed or set to 100% if it should fill the overlay */
+        pointer-events: all; /* Ensures interaction with draggable images */
+        z-index: 100;
+      }
+
+
+      .img.draggable {
+        position: sticky;
+        left: 50%;
+        top: 0;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+      }
+
+    }
+
+
+
+
+  /* Optional: Style the scrollbar for WebKit browsers to make it more visible if it's too subtle */
+  ::-webkit-scrollbar {
+    height: 4px; /* Height of horizontal scrollbar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 2px;
+  }
+
+
+
+}
+
+
+/* capture screen, save content area  */
+
+#image-overlay {
+  /* background-color: grey; */
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  display: none;  /* Controlled via JavaScript */
+  justify-content: center;
+  align-items: center;
+  z-index: -100;
+
+}
+
+.image-container {
+  position: fixed;
+  top: 0vh; /* Adjust as necessary to not overlap with the image-overlay */
+  left: 0;
+  width: 100%; /* Ensures it covers the full overlay width */
+  height: auto; /* Adjust height as needed or set to 100% if it should fill the overlay */
+  pointer-events: all; /* Ensures interaction with draggable images */
+  z-index: 100;
+}
+
+
+.img.draggable {
+  position: sticky;
+  left: 50%;
+  top: 1000px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+
+
+/* ---------------------------- loading animation ---------------------------------------- */
+
+
+.loader {
+ 
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+    spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+  ;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#default-image {
+  position: fixed;
+  top: 60vh;
+  left: 70vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* -------------------------------------------------------------- */

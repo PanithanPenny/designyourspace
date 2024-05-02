@@ -1,0 +1,51 @@
+
+h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;
+  margin: 32px;
+  color: #293592;
+  text-align: center; /* Centers text horizontally */
+  
+}
+
+.btn {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  margin: 6px;
+  color: #ffffff;
+  background-color: #293592;
+  width: 128px;
+  padding: 12px 32px;
+  border-radius: 64px;
+  border: 4px solid #7CC7C7;
+  position: fixed; /* Fixed position to keep the button centered regardless of scrolling */
+  bottom: 15%; /* Aligns the bottom edge at the middle of the viewport vertically */
+  left: 50%; /* Aligns the left edge at the middle of the viewport horizontally */
+  transform: translate(-50%, 50%); /* Centers the button exactly in the middle of the viewport */
+  text-align: center;
+  align-content: center;
+}
+
+.cover {
+  margin-top: 32px;
+  width: 100%; /* Ensures the cover div takes the full width of the viewport */
+  height: auto; /* Adjusts height dynamically to maintain the image's aspect ratio */
+  position: relative; /* Enables positioning of elements inside the div */
+  overflow: hidden; /* Prevents any overflow outside the div */
+}
+
+.cover img {
+  width: 100%; /* Scales the image to the width of its container */
+  height: auto; /* Adjusts height to maintain aspect ratio */
+  display: block; /* Removes extra space below the image */
+}
+
+.title-container{
+  margin: 0px;
+}

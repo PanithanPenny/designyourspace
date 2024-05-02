@@ -1,0 +1,58 @@
+body {
+  background-color: #F1EDE2;
+  position: relative;
+  overflow: hidden;  /* Might adjust if scrolling is needed */
+  touch-action: none;
+}
+
+.title-container h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0px;
+  color: #293592;
+  text-align: center; /* Centers text horizontally */
+  top : 32px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.title-container h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 4px;
+    color: #293592;
+    text-align: center; /* Centers text horizontally */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative; /* Required to use top */
+    top: -2px; /* Moves h2 down within its container */
+}
+
+.news-feed-container {
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;  /* Adjust to stack images vertically */
+  align-items: center;  /* Center align the images */
+  overflow-y: auto;  /* Allows vertical scrolling */
+  margin: auto; /* Center horizontally */
+  padding: 4px;
+  width: 90%;  /* Adjust width to your preference */
+  max-height: 85vh;  /* Adjust based on viewport height */
+}
+
+
+.news-feed-container img {
+  width: 60vw;  /* Width of images to be less than the container */
+  margin-left:2px;
+  margin-bottom: 20px;  /* Space between images */
+  border-radius: 10px;  /* Optional: Rounded corners for images */
+  border: 2px solid #293592;
+}

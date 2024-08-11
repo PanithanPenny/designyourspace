@@ -1,0 +1,13 @@
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .cache/replit/modules/nodejs-20","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .cache/replit/modules/replit","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/fxparser","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/mime","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/mkdirp","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/nodemon","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/nodetouch","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/nopt","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/semver","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/uuid","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/@google-cloud/storage/node_modules/.bin/mime","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/gaxios/node_modules/.bin/uuid","time":"2024-08-11T17:00:03Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/teeny-request/node_modules/.bin/uuid","time":"2024-08-11T17:00:04Z"}

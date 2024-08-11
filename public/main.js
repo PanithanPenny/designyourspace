@@ -25,9 +25,6 @@ setDragEndCallback(function(element, x, y, scale, angle) {
 
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   
   const imageOverlay = document.getElementById('image-overlay');

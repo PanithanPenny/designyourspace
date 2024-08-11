@@ -10,9 +10,6 @@ const { uploadImage } = require("./uploadHelper.js");
 // Set up static file serving from the "public" folder
 app.use(express.static(path.join(__dirname, "public")));
 
-
-
-
 const upload = multer({
   storage: multer.memoryStorage(),
   limits: {
@@ -77,44 +74,40 @@ app.post(
   },
 );
 
-
-
-
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-
 // API endpoint for deleting an image post
-app.delete('/api/deletePost/:index', async (req, res) => {
-    const index = parseInt(req.params.index);
-    if (isNaN(index)) {
-        return res.status(400).send('Invalid index');
+app.delete("/api/deletePost/:index", async (req, res) => {
+  const index = parseInt(req.params.index);
+  if (isNaN(index)) {
+    return res.status(400).send("Invalid index");
+  }
+
+  try {
+    // Get the current list of URLs
+    let urlsJson = await client.get("uploaded_file_urls");
+    if (!urlsJson || !Array.isArray(urlsJson)) {
+      return res.status(404).send("No posts found");
     }
 
-    try {
-        // Get the current list of URLs
-        let urlsJson = await client.get('uploaded_file_urls');
-        if (!urlsJson || !Array.isArray(urlsJson)) {
-            return res.status(404).send('No posts found');
-        }
-
-        // Check if the index is within the range of the array
-        if (index < 0 || index >= urlsJson.length) {
-            return res.status(404).send('Post not found');
-        }
-
-        // Remove the post at the specified index
-        urlsJson.splice(index, 1);
-
-        // Update the database with the new list of URLs
-        await client.set('uploaded_file_urls', urlsJson);
-
-        // Respond to the client
-        res.status(200).send('Post deleted successfully');
-    } catch (error) {
-        console.error('Error deleting post:', error);
-        res.status(500).send('Failed to delete post');
+    // Check if the index is within the range of the array
+    if (index < 0 || index >= urlsJson.length) {
+      return res.status(404).send("Post not found");
     }
+
+    // Remove the post at the specified index
+    urlsJson.splice(index, 1);
+
+    // Update the database with the new list of URLs
+    await client.set("uploaded_file_urls", urlsJson);
+
+    // Respond to the client
+    res.status(200).send("Post deleted successfully");
+  } catch (error) {
+    console.error("Error deleting post:", error);
+    res.status(500).send("Failed to delete post");
+  }
 });

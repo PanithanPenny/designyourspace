@@ -1,0 +1,213 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- HTML Meta Tags -->
+  <title>Design your space 🏠</title>
+  <meta name="description" content="Craft your own creative spaces: just drag and drop">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://hh-final-design-your-space-panitankasin.replit.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Design your space 🏠">
+  <meta property="og:description" content="Craft your own creative spaces: just drag and drop">
+  <meta property="og:image" content="https://hh-final-design-your-space-panitankasin.replit.app/dys.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="hh-final-design-your-space-panitankasin.replit.app">
+  <meta property="twitter:url" content="https://hh-final-design-your-space-panitankasin.replit.app/">
+  <meta name="twitter:title" content="Design your space 🏠">
+  <meta name="twitter:description" content="Craft your own creative spaces: just drag and drop">
+  <meta name="twitter:image" content="https://hh-final-design-your-space-panitankasin.replit.app/dys.png">
+
+
+  <meta property="og:image" content="https://hh-final-design-your-space-panitankasin.replit.app/dys.png" />
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD/nQAAAAAAAP///wBzVSUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAABERAgACIiIgERECAAIiIiAREQIAAgAAIBERAgACAAAgETECAAIAACATMwIAAgAAIDMzMiIiIiIjMzMzIiIiIjMzEzMyIiIjMzERMzMiIjMzERETMzIjMzAREREzMzMzABERERMzMzEAERERETMzEQAREREREzERABHAAwAAwAMAAMADAADAAwAAwAMAAEACAAAAAAAAAAAAAAAAAACAAQAAwAMAAOADAADwAwAA+BMAAPwzAAD+cwAA" rel="icon" type="image/x-icon">
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="draggable.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+   <div id="overlay">
+     <div id="image-overlay" style="display: none;">
+       <!-- Dynamically added images will appear here -->
+       
+     </div>
+    
+     
+  <!-- 
+      <img class="draggable" id= "default-image"src="/structure2.png" alt="Structure Image">
+          -->
+
+
+
+     <div class="image-container">
+           
+    </div>
+     
+
+      <!-- <h1 contenteditable class="draggable">Create your scene</h1> -->
+    
+
+
+  </div>
+  
+  <div class="category">
+    <button class="cat-btn" id="structure"><img src="/structure4.png" alt="Icon 1"></button>
+    <button class="cat-btn" id="furniture"><img src="/furniture2.png" alt="Icon 1"></button>
+    <button class="cat-btn" id="tree"><img src="/tree2.png" alt="Icon 1"></button>
+    <button class="cat-btn" id="people"><img src="/people8.png" alt="Icon 1"></button>
+    <button class="cat-btn" id="outdoor"><img src="/outdoor1.png" alt="Icon 1"></button>
+  </div>
+
+  <div class="structure-items-list">
+    <div class="structure-btn" id="structure1-btn"><img src="/structure1.png"></div>
+    <div class="structure-btn" id="structure2-btn"><img src="/structure2.png"></div>
+    <div class="structure-btn" id="structure3-btn"><img src="/structure3.png"></div>
+    <div class="structure-btn" id="structure4-btn"><img src="/structure4.png"></div>
+    <div class="structure-btn" id="structure5-btn"><img src="/structure5.png"></div>
+    <div class="structure-btn" id="structure6-btn"><img src="/structure6.png"></div>
+    <div class="structure-btn" id="structure7-btn"><img src="/structure7.png"></div>
+    <div class="structure-btn" id="structure8-btn"><img src="/structure8.png"></div>
+    <div class="structure-btn" id="structure1-btn"><img src="/structure9.png"></div>
+    <div class="structure-btn" id="structure2-btn"><img src="/structure10.png"></div>
+    <div class="structure-btn" id="structure3-btn"><img src="/structure11.png"></div>
+    <div class="structure-btn" id="structure4-btn"><img src="/structure12.png"></div>
+    <div class="structure-btn" id="structure5-btn"><img src="/structure13.png"></div>
+    <div class="structure-btn" id="structure6-btn"><img src="/structure14.png"></div>
+    <div class="structure-btn" id="structure7-btn"><img src="/structure15.png"></div>
+    <div class="structure-btn" id="structure8-btn"><img src="/structure16.png"></div>
+  </div>
+
+
+
+  <div class="furniture-items-list">
+    <div class="furniture-btn" id="furniture1-btn"><img src="/furniture1.png"></div>
+    <div class="furniture-btn" id="furniture2-btn"><img src="/furniture2.png"></div>
+    <div class="furniture-btn" id="furniture3-btn"><img src="/furniture3.png"></div>
+    <div class="furniture-btn" id="furniture4-btn"><img src="/furniture4.png"></div>
+    <div class="furniture-btn" id="furniture5-btn"><img src="/furniture5.png"></div>
+    <div class="furniture-btn" id="furniture6-btn"><img src="/furniture6.png"></div>
+    <div class="furniture-btn" id="furniture7-btn"><img src="/furniture7.png"></div>
+    <div class="furniture-btn" id="furniture8-btn"><img src="/furniture8.png"></div>
+    <div class="furniture-btn" id="furniture9-btn"><img src="/furniture9.png"></div>
+    <div class="furniture-btn" id="furniture10-btn"><img src="/furniture10.png"></div>
+    <div class="furniture-btn" id="furniture1-btn"><img src="/furniture11.png"></div>
+    <div class="furniture-btn" id="furniture2-btn"><img src="/furniture12.png"></div>
+    <div class="furniture-btn" id="furniture3-btn"><img src="/furniture13.png"></div>
+    <div class="furniture-btn" id="furniture4-btn"><img src="/furniture14.png"></div>
+    <div class="furniture-btn" id="furniture5-btn"><img src="/furniture15.png"></div>
+    <div class="furniture-btn" id="furniture6-btn"><img src="/furniture16.png"></div>
+    <div class="furniture-btn" id="furniture7-btn"><img src="/furniture17.png"></div>
+    <div class="furniture-btn" id="furniture8-btn"><img src="/furniture18.png"></div>
+    <div class="furniture-btn" id="furniture9-btn"><img src="/furniture19.png"></div>
+    <div class="furniture-btn" id="furniture10-btn"><img src="/furniture20.png"></div>
+  </div>
+
+  <div class="tree-items-list">
+    <div class="tree-btn" id="tree1-btn"><img src="/tree1.png"></div>
+    <div class="tree-btn" id="tree2-btn"><img src="/tree2.png"></div>
+    <div class="tree-btn" id="tree3-btn"><img src="/tree3.png"></div>
+    <div class="tree-btn" id="tree4-btn"><img src="/tree4.png"></div>
+    <div class="tree-btn" id="tree5-btn"><img src="/tree5.png"></div>
+    <div class="tree-btn" id="tree6-btn"><img src="/tree6.png"></div>
+    <div class="tree-btn" id="tree7-btn"><img src="/tree7.png"></div>
+    <div class="tree-btn" id="tree8-btn"><img src="/tree8.png"></div>
+  </div>
+
+  <div class="people-items-list">
+    <div class="people-btn" id="people1-btn"><img src="/people1.png"></div>
+    <div class="people-btn" id="people2-btn"><img src="/people2.png"></div>
+    <div class="people-btn" id="people3-btn"><img src="/people3.png"></div>
+    <div class="people-btn" id="people4-btn"><img src="/people4.png"></div>
+    <div class="people-btn" id="people5-btn"><img src="/people5.png"></div>
+    <div class="people-btn" id="people6-btn"><img src="/people6.png"></div>
+    <div class="people-btn" id="people7-btn"><img src="/people7.png"></div>
+    <div class="people-btn" id="people8-btn"><img src="/people8.png"></div>
+    <div class="people-btn" id="people9-btn"><img src="/people9.png"></div>
+    <div class="people-btn" id="people10-btn"><img src="/people10.png"></div>
+    <div class="people-btn" id="people10-btn"><img src="/people11.png"></div>
+    <div class="people-btn" id="people10-btn"><img src="/people12.png"></div>
+  </div>
+
+
+  <div class="outdoor-items-list">
+    <div class="outdoor-btn" id="outdoor1-btn"><img src="/outdoor1.png"></div>
+    <div class="outdoor-btn" id="outdoor2-btn"><img src="/outdoor2.png"></div>
+    <div class="outdoor-btn" id="outdoor3-btn"><img src="/outdoor3.png"></div>
+    <div class="outdoor-btn" id="outdoor4-btn"><img src="/outdoor4.png"></div>
+    <div class="outdoor-btn" id="outdoor5-btn"><img src="/outdoor5.png"></div>
+    <div class="outdoor-btn" id="outdoor6-btn"><img src="/outdoor6.png"></div>
+    <div class="outdoor-btn" id="outdoor7-btn"><img src="/outdoor7.png"></div>
+  </div>
+  
+<!---------------------------- loading animation ---------------------------------------->
+
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ------------------------------------- -->
+
+  <!-- ---------------------buttom bar---------------------------------------------------------->
+
+  <div class="button-bar-container">
+    <button class="btn" id="remove-button"><img src="/trash.png" alt="Icon 1"></button>
+    <button class="btn" id="save-button"><img src="./download.png" alt="Icon 1"></button>
+    <button class="btn" id="post-button">Post</button>
+  </div>
+
+  <div id="posts"></div>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="index.js"></script>
+  <script type="module" src="uploadHelper.js"></script>
+</body>
+
+
+<!-- <script src="js/app.js"></script> -->
+
+
+<!-- script for content screen capture -->
+
+
+
+
+</html>
+
